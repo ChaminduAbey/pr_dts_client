@@ -1,0 +1,124 @@
+.tutor__container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+
+.tutor__image{
+    width: 25vw;
+    height: 43vh;
+    transform: scale(0.87);
+    transition: all 0.3s ease-out;
+}
+
+.tutor__image:hover{
+    cursor: pointer;
+    transform: scale(0.85);
+}
+
+.tutor__grid-item:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+.tutor__grid-item:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
+
+.tutor-top{
+    margin-top: 5vh;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    margin-bottom: -18vh;
+}
+
+.tutor-middle{
+    margin-left: -10vw;
+    margin-right: -10vw;
+}
+
+.tutor-bottom{
+    margin-top: -18vh;
+    margin-left: -5vw;
+    margin-right: -5vw;
+}
+
+@media screen and (max-width: 1024px){
+    .tutor__grid-item{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .tutor__grid-item:nth-child(1){
+        margin-top: 10vh;
+        margin-bottom: 1vh;
+    }
+
+    .tutor__grid-item:nth-child(3){
+        margin-top: 1vh;
+        margin-bottom: 10vh;
+    }
+
+    .tutor__image{
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .tutor-top{
+        margin-left: -4vw;
+        margin-right: -4vw;
+    }
+
+    .tutor-middle{
+        opacity: 0;
+        margin-left: -29vw;
+        margin-right: -29vw;
+    }
+
+    .tutor-bottom{
+        margin-left: -4vw;
+        margin-right: -4vw;
+    }
+}
+
+@media screen and (width: 1024px){
+    .tutor__image{
+        height: 35vh;
+    }
+
+    .tutor__grid-item:nth-child(1){
+        margin-top: 20vh;
+        margin-bottom: -10vh;
+    }
+
+    .tutor__grid-item:nth-child(3){
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+    }
+    
+
+    .tutor-top{
+        margin-top: -12vh;
+        margin-left: -9vw;
+        margin-right: -9vw;
+        margin-bottom: -14vh;
+    }
+    
+    .tutor-middle{
+        opacity: 1;
+        margin-left: -18vw;
+        margin-right: -18vw;
+    }
+
+    .tutor-bottom{
+        margin-top: -14vh;
+        margin-left: -9vw;
+        margin-right: -9vw;
+    }
+}

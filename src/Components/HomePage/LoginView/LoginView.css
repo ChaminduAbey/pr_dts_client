@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+:root {
+  --gold: #dfb824;
+  --red: #ee2a28;
+  --blue: #2f80ed;
+}
+.login_view {
+  border: red;
+}
+.heading-container {
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 5vh;
+
+  font-family: "Pirou", serif;
+  margin-bottom: 16px;
+}
+.sub-heading {
+  font-family: "Lora", serif;
+  margin-bottom: 5vh;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.d-flex {
+  display: flex;
+  margin: 0px 30px;
+  justify-content: center;
+}
+
+.greeting-button {
+  padding: 12px 12px;
+  margin: 0px 8px;
+  width: 15vw;
+  font-size: 1em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.login-instructions {
+  margin: 32px 16px;
+}
+
+.login_bottom-bar {
+  height: 10vh;
+  display: flex;
+  width: 50vw;
+  padding: 0 16px;
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .login_bottom-bar {
+    width: 100vw;
+  }
+
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .greeting-button {
+    width: 80vw;
+    margin: 0.5em;
+  }
+
+  .heading-container {
+    margin-top: 10vh;
+  }
+}
+
+.login_bottom-bar img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 1em;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  font-size: 1.3em;
+  background: transparent;
+  color: white;
+  border-color: white;
+  padding: 0.4em;
+  border-radius: 16px;
+  margin: 0.3em;
+}
+
+form label {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.transparent-bg {
+  height: 64px;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 16px;
+  margin: 16px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  color: white;
+
+  text-align: center;
+  align-items: center;
+
+  font-size: 1.2em;
+}
+
+.left {
+  text-align: left;
+}
+
+.grey-color {
+  color: #b1b1b1;
+}

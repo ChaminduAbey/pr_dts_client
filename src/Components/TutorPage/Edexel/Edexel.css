@@ -1,0 +1,120 @@
+.edexel__container{
+    background: #000;
+    color: #fff;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+.edexel__tutor-head{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.edexel__post-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+
+.edexel__post{
+    height: max-content;
+    margin: 5vh 5vw 2vw 5vw;
+    border-radius: 0.5rem;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.edexel__profile-image{
+    width: 15vw;
+    height: 40vh;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.edexel__profile-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 15vw;
+    height: 5vh;
+    background: #fff;
+    color: #000;
+}
+
+.edexel__overlay{
+    position: absolute;
+    background: #000;
+    opacity: 0;
+    width: 15vw;
+    height: 40vh;
+    transition: all 0.3s ease;
+}
+
+.edexel__overlay-text-wrapper{
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.edexel__text{
+    text-align: center;
+    padding: 1.1rem;
+    margin-top: 4vh;
+}
+
+.edexel__overlay:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.edexel__post:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .edexel__post-container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .edexel__profile-image{
+        width: 78vw;
+    }
+
+    .edexel__overlay{
+        width: 80vw;
+    }
+
+    .edexel__profile-name{
+        width: 80vw;
+    }
+
+    .edexel__text{
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (width: 1024px){
+    .edexel__tutor-head{
+        font-size: 6rem;
+    }
+
+    .edexel__profile-name{
+        font-size: 2rem;
+    }
+
+    .edexel__overlay-text-wrapper{
+        line-height: 6rem;
+        font-size: 4rem;
+    }
+}

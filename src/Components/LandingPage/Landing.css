@@ -1,0 +1,244 @@
+.landing__container{
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    height: 100vh;
+    width: 100vw;
+    background: url('../../images/home-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.landing__container_animation{
+    animation: fade-out 3s ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.landing__grid-item:nth-of-type(2){
+    position: absolute;
+    bottom: 0px;
+    height: 20vh;
+    width: 100vw;
+}
+
+.landing__count{
+    font-size: 3rem
+}
+
+.landing__count-text{
+    font-size: 1rem;
+}
+
+.landing__count-animate{
+    font-size: 2rem;
+}
+
+.landing__button{
+    outline: none;
+    position: absolute;
+    bottom: 5vh;
+    font-size: 2rem;
+    padding: 0.3rem;
+    width: 20vw;
+    justify-self: center;
+    z-index: 999;
+    cursor: default;
+    opacity: 0;
+    background: #fff;
+    border-radius: 1rem;
+    color: #000;
+    animation: fade-button 1s ease 3s;
+    animation-fill-mode: forwards;
+}
+
+.landing__button:focus{
+    transition: all 0.5s ease;
+    opacity: 0;
+    animation-fill-mode: unset;
+}
+
+.landing__logo-wrapper{
+    margin-top: -30vh;
+    transform: scale(0.6);
+}
+
+.landing__logo{
+    width: 30vw;
+    height: 60vh;
+}
+
+.landing__logo-animate{
+    margin-top: 0;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.landing__logo-content{
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+}
+
+.landing__bottom-text{
+    opacity: 0;
+}
+
+.landing__bottom-text-animate{
+    transition: all 1s ease-out;
+    margin-bottom: 20vh;
+    opacity: 1;
+    animation-fill-mode: unset;
+}
+
+.landing__dot-animation{
+    margin-top: -10vh;
+    font-size: 0rem;
+}
+
+.landing__dot-animation-animte{
+    transition: all 1s ease-out;
+    margin-top: -35vh;
+    font-size: 12rem;
+    opacity: 1;
+}
+
+.landing__dot-animation-animte span {
+    font-family: 'Quicksand';
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+  
+.landing__dot-animation-animte #dot_2 {
+    animation-delay: .2s;
+}
+  
+.landing__dot-animation-animte #dot_3 {
+    animation-delay: .4s;
+}
+.landing__dot-animation-animte #dot_4 {
+    animation-delay: .6s;
+}
+.landing__dot-animation-animte #dot_5 {
+    animation-delay: .8s;
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes fade-button{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+@keyframes slide-up{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    5%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes blink {
+
+    0% {
+      opacity: .2;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: .2;
+    }
+  }
+
+  ::-webkit-scrollbar{
+      width: 0;
+  }
+
+@media screen and (max-width: 1024px){
+
+    .landing__logo{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .landing__logo-content{
+          font-size: 2rem;
+    }
+
+    .landing__bottom-text{
+        font-size: 1.4rem;
+    }
+
+    .landing__dot-animation{
+        opacity: 0;
+        font-size: 8rem;
+    }
+
+    .landing__button{
+        font-size: 1rem;
+        width: 40vw;
+        bottom: 20vh;
+    }
+
+    .landing__button:focus{
+        display: inline;
+    }
+
+    .landing__bottom-text-animate{
+        transition: all 1s ease;
+        margin-top: 0vh;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        opacity: 1;
+    }
+    
+    .landing__dot-animation-animte{
+        transition: all 1s ease;
+        margin-top: -16vh;
+        font-size: 7rem;
+    }
+  }
+
+@media screen and (width: 1024px){
+      .landing__dot-animation{
+          padding-top: 6vh;
+      }
+
+      .landing__bottom-text-animate{
+          margin-bottom: 13vh;
+      }
+  }

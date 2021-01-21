@@ -1,0 +1,139 @@
+.partners__container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+
+.partners__image{
+    width: 25vw;
+    height: 43vh;
+    transform: scale(0.7);
+    transition: all 0.3s ease-out;
+}
+
+.partners__image:hover{
+    cursor: pointer;
+    transform: scale(0.75);
+}
+
+.partners__grid-item:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+.partners__grid-item:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
+
+.partners-top{
+    margin-top: 5vh;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    margin-bottom: -25vh;
+}
+
+.partners-middle{
+    margin-left: -10vw;
+    margin-right: -10vw;
+}
+
+.partners-bottom{
+    margin-top: -19vh;
+    margin-left: -5vw;
+    margin-right: -5vw;
+}
+
+@media screen and (max-width: 1024px){
+    .partners__grid-item{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .partners__grid-item:nth-child(1){
+        margin-top: 2vh;
+        margin-bottom: 1px;
+    }
+
+    .partners__grid-item:nth-child(3){
+        margin-top: 1px;
+        margin-bottom: 10vh;
+    }
+
+    .partners__image{
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .partners-top{
+        margin-left: -4vw;
+        margin-right: -4vw;
+        margin-bottom: 1px;
+    }
+
+    .partners-middle{
+        opacity: 0;
+        margin-left: -29vw;
+        margin-right: -29vw;
+    }
+
+    .partners-bottom{
+        margin-top: 1vh;
+        margin-left: -15vw;
+        margin-right: -15vw;
+    }
+
+    .partners-bottom-link{
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (width: 1024px){
+    .partners__container{
+        margin-top: 0vh;
+    }
+
+    .partners__image{
+        height: 35vh;
+    }
+
+    .partners__grid-item:nth-child(1){
+        margin-top: 20vh;
+        margin-bottom: -10vh;
+    }
+
+    .partners__grid-item:nth-child(3){
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+    }
+    
+
+    .partners-top{
+        margin-top: -12vh;
+        margin-left: -9vw;
+        margin-right: -9vw;
+        margin-bottom: -1vh;
+    }
+    
+    .partners-middle{
+        opacity: 1;
+        margin-top: vh;
+        margin-left: -18vw;
+        margin-right: -18vw;
+    }
+
+    .partners-bottom{
+        margin-top: -1vh;
+        margin-left: -9vw;
+        margin-right: -9vw;
+    }
+
+    .partners-bottom:nth-child(2){
+        margin-top: 10vh;
+    }
+}

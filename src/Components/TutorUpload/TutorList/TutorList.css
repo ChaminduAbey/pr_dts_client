@@ -1,0 +1,57 @@
+.tutorList__container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 10vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.tutorList__heading{
+    margin: 3vh;
+}
+
+.tutorList__table{
+    margin: 2vw;
+}
+
+.tutorList__head{
+    padding: 0.7rem;
+    background: #987988;
+}
+
+.tutorList__data{
+    padding: 1rem;
+}
+
+.tutorList__btn{
+    color: #fff;
+    font-size: 1rem;
+    background: rgb(233, 42, 42);
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .tutorList__btn, .tutorList__data, .tutorList__head{
+        font-size: 0.6rem;
+    }
+
+    .tutorList__btn{
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+    }
+}
+
+@media screen and (width: 1024px){
+    .tutorList__btn, .tutorList__data, .tutorList__head{
+        font-size: 1rem;
+    }
+
+    .tutorList__btn{
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+    }
+}

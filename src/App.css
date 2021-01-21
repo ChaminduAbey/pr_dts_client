@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap");
+@font-face {
+  font-family: "Pirou";
+  src: local("Pirou"), url("./fonts/pirou/Pirou-Regular.otf") format("opentype");
+}
+html {
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.__noClick:active {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: rgb(65, 65, 65);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 12px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.pd-hr-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}

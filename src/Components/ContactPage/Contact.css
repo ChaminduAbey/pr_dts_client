@@ -1,0 +1,125 @@
+.contact__container{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.contact__grid-item:nth-child(1){
+    display: grid;
+    grid-template-rows: 50% 50%;
+    font-size: 1.5rem;
+}
+
+.contact__grid-item:nth-child(2){
+    margin-top: -8vh;
+    font-size: 1.5rem;
+}
+
+.contact__address-head{
+    margin-top: 10vh;
+    font-weight: 800;
+    margin-bottom: 5vh;
+    letter-spacing: 0.2rem;
+}
+
+.contact__hotline-head{
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+}
+
+.contact__image{
+    margin: 8vh;
+    width: 40vw;
+}
+
+.contact__tutor-button{
+    position: fixed;
+    width: 5vw;
+    height: 5vh;
+    opacity: 0;
+    background: blue;
+}
+
+.contact__disable{
+    display: none;
+}
+
+.contact__tutor-button-link{
+    position: fixed;
+    width: 5vw;
+    z-index: 99;
+}
+
+.contact__hotline-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-top{
+    top: 15vh;
+    left: 0;
+}
+
+.left-middle{
+    top: 50vh;
+    left: 0;
+}
+
+.left-bottom{
+    bottom: 0;
+    left: 0;
+}
+
+.right-top{
+    top: 15vh;
+    right: 0;
+}
+
+.right-middle{
+    top: 50vh;
+    right: 0;
+}
+
+.right-bottom{
+    bottom: 0;
+    right: 0;
+}
+
+.middle-bottom{
+    bottom: 0;
+    left: 47vw;
+    right: 47vw;
+}
+
+@media screen and (max-width: 1024px){
+    .contact__container{
+        grid-template-columns: 0 0;
+        grid-template-rows: 50% 50%;
+        height: 190vh;
+    }
+
+    .contact__grid-item{
+        width: 100vw;
+    }
+
+    .contact__grid-item:nth-child(1){
+        margin-top: 170vh;
+    }
+
+    .contact__image{
+        width: 60vw;
+    }
+
+    .contact__hotline-head{
+        font-size: 1.3rem;
+    }
+
+    .contact__address-wrapper:nth-child(2){
+        margin-top: 10vh;
+    }
+}

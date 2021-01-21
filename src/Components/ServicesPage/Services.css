@@ -1,0 +1,263 @@
+.services__container{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 8% 92%;
+    background: #000;
+    color: #fff;
+    overflow-y: hidden;
+    transition: all 0.4s ease;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.services__grid-item:nth-child(1){
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10vh;
+    order: 2;
+}
+
+.services__grid-item:nth-child(2){
+    order: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 7vh;
+    margin-left: 3vw;
+    transform: scale(0.9);
+}
+
+.services__heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 12vh;
+}
+
+.services__desc-image{
+    width: 40vw;
+    height: 60vh
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+.services__desc-wrapper{
+    display: flex;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 9vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.services__wrapper-grid-item{
+    text-align: center;
+    height: max-content;
+}
+
+.services__text-wrapper{
+    margin-top: 5vh;
+    display: flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.services__num{
+    font-size: 4rem;
+    color: rgb(112, 112, 112);
+    font-weight: bold;
+}
+
+.services__text{
+    width: 20vw;
+    font-size: 1.6rem;
+    padding-top: 2.2vh;
+    padding-left: 2vw;
+    text-align: left;
+}
+
+.services__image{
+    margin-top: -10vh;
+    width: 30vw;
+}
+
+.head-1{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.description-1{
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    line-height: 4vh;
+}
+.description-2{
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    line-height: 4vh;
+}
+.description-3{
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    line-height: 4vh;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .services__container{
+        height: 100%;
+    }
+
+    .grid-item{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services__grid-item:nth-child(1){
+        margin-top: -5vh;
+        order: 1;
+    }
+
+    .services__grid-item:nth-child(2){
+        height: 30vh;
+        justify-content: center;
+        order: 2;
+    }
+
+    .services__text-wrapper{
+        width: 40vw;
+        margin-top: 3vh;
+    }
+
+    .services__wrapper-grid-item{
+        text-align: left;
+        margin-top: -8vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .services__heading{
+        font-size: 2.8rem;
+    }
+
+    .services__num{
+        font-size: 1rem;
+    }
+
+    .services__text{
+        margin-top: -1.5ch;
+        font-size: 0.8rem;
+        padding-top: 2vh;
+        width: max-content;
+    }
+
+    .services__desc-wrapper{
+        height: 30vh;
+        width: 100vw;
+        font-size: 0.6rem;
+        line-height: 1.7vh;
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    .services__image{
+        margin-top: 10vh;
+        width: 50vw;
+    }
+
+    .services__desc-image{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .description-1{
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 15vw;
+        line-height: 2vh;
+    }
+    .description-2{
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 3vw;
+        line-height: 2vh;
+    }
+    .description-3{
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        line-height: 2vh;
+    }
+    
+
+}
+
+@media screen and (width: 1024px){
+
+    .services__grid-item:nth-child(2){
+        margin-top: 5vh;
+    }
+
+    .services__heading{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-size: 4rem;
+    }
+
+    .services__num{
+        font-size: 3rem;
+    }
+
+    .services__text{
+        margin-top: -1.5ch;
+        font-size: 2rem;
+    }
+
+    .services__desc-wrapper{
+        margin-top: 3vh;
+        font-size: 1.2rem;
+    }
+
+    .services__wrapper-grid-item{
+        margin-top: -8vh;
+    }
+
+    .description-1{
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 25vw;
+        line-height: 4vh;
+    }
+    .description-2{
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        line-height: 4vh;
+    }
+    .description-3{
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 25vw;
+        line-height: 4vh;
+    }
+
+    .services__image{
+        height: 30vh;
+        width: 40vw;
+        margin-top: 10vh;
+    }
+}

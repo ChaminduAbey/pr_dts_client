@@ -1,0 +1,141 @@
+.dts__container{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    color: #fff;
+    justify-content: center;
+}
+
+.dts__grid-item:nth-child(1){
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.dts__heading{
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+
+.dts__desc{        
+    display: flex;
+    align-items: center;
+    background: url(../../images/decription_back.jpg);
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    padding: 4vw;
+    font-size: 1.4rem;
+}
+
+.dts__grid-item:nth-child(2){
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dts__sub-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border-radius: 2rem;
+    width: 40vw;
+    height: 30vh;
+    justify-self: center;
+}
+
+.dts__sub-content:nth-child(1){
+    margin-top: 1vh;
+}
+.dts__sub-content:nth-child(2){
+    margin-top: -12vh;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 40vw;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .dts__container{
+        height: 100vh;
+    }
+
+    .dts__grid-item:nth-child(1){
+        margin-top: 20vh;
+        width: 100vw;
+    }
+    
+    .dts__grid-item:nth-child(2){
+        width: 100vw;
+        margin-top: -20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dts__desc{
+        display: flex;
+        align-items: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        height: 30vh;
+        padding: 3vw;
+        border-radius: 1rem;
+        font-size: 1rem;
+    }
+
+    .dts__sub-content{
+        width: 100vw;
+    }
+
+    .dts__sub-content:nth-child(1){
+        margin: 10vw;
+        margin-right: 0;
+    }
+
+    .dts__sub-content:nth-child(2){
+        margin-top: -14vh;
+        margin-left: 10vw;
+        margin-bottom: -10vh;
+        font-size: 1rem;
+        width: 85vw;
+    }
+
+}
+
+@media screen and (width: 1024px){
+
+    .dts__container{
+        margin-top: -10vh;
+        height: 100vh;
+    }
+
+    .dts__desc{
+        font-size: 2rem;
+    }  
+
+    
+    .dts__sub-content:nth-child(1){
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+    }
+
+    .dts__sub-content:nth-child(2){
+        font-size: 2rem;
+    }
+
+    .dts__grid-item:nth-child(1){
+        margin-top: 40vh;
+        margin-bottom: 10vh;
+    }
+}

@@ -1,0 +1,127 @@
+.tutorup__container{
+    background: #000;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 1.5rem;
+}
+
+.tutorup__grid:nth-child(1){
+    grid-template-rows: 40% 10% 10% 10% 10% 10% 10%;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.tutorup__grid:nth-child(2){
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-self: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+}
+
+.tutorup__grid-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.tutorup__grid-item:nth-child(1){
+    margin-top: 10vh;
+}
+
+.tutorup__submit{
+    color: #fff;
+    font-weight: 600;
+    background: #6495ed;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    width: 10vw;
+    cursor: pointer;
+}
+
+.tutorup__url-submit{
+    color: #fff;
+    font-weight: 600;
+    background: #6495ed;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tutorup__url{
+    font-size: 1.3rem;
+    width: 40vw;
+    border-radius: 0.5rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.tutorup__submit:hover{
+    cursor: pointer;
+}
+
+.tutorup__text-input{
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.tutorup__image-input:hover {
+    cursor: pointer;
+}
+
+.tutorup__list-head{
+    margin-bottom: 5vh;
+}
+
+.tutorup__list{
+    color: #fff;
+    font-weight: 600;
+    background: #6495ed;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    width: 10vw;
+    text-align: center;
+    margin-bottom: 15vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .tutorup__container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tutorup__url-submit{
+        width: 40vw;
+    }
+    
+    .tutorup__submit{
+        width: 40vw;
+    }
+
+    .tutorup__url{
+        width: 85vw;
+    }
+
+    .tutorup__grid:nth-child(2){
+        margin-bottom: 10vh;
+    }
+
+    .tutorup__list-head{
+        margin-top: 10vh;
+    }
+
+    .tutorup__list{
+        width: 50vw;
+        margin-bottom: 30vh;
+    }
+}
